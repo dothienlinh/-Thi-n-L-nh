@@ -1,0 +1,7 @@
+# dependencies
+**/node_modules
+
+# package manager
+**/pnpm-lock.yaml
+**/package-lock.json
+**/yarn.lock
