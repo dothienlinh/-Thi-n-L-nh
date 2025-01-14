@@ -1,0 +1,31 @@
+<h2>All Resources</h2>
+<a href="/resources/create">Create New Resource</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resources.forEach(resource => { %>
+    <tr>
+      <td><%= resource.id %></td>
+      <td><%= resource.name %></td>
+      <td><%= resource.description %></td>
+      <td>
+        <a href="/resources/<%= resource.id %>">View</a> |
+        <a href="/resources/<%= resource.id %>/edit">Edit</a> |
+        <a
+          href="/resources/<%= resource.id %>/delete"
+          onclick="return confirm('Are you sure?')"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

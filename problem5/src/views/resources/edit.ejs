@@ -1,0 +1,22 @@
+<h2>Edit Resource</h2>
+<form action="/resources/<%= resource.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT" />
+  <div>
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      value="<%= resource.name %>"
+      required
+    />
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required>
+<%= resource.description %></textarea
+    >
+  </div>
+  <button type="submit">Update</button>
+</form>
+<a href="/resources">Back to List</a>
