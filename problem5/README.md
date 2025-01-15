@@ -1,19 +1,16 @@
-## Scripts
-
-# Install package
+## Project setup
 
 ```bash
-npm i
+# install dependencies
+$ pnpm install
+
+# run docker compose
+$ docker compose up -d
 ```
 
-# Run docker (require docker installed)
+## Compile and run the project
 
 ```bash
-docker-compose up -d
-```
-
-# Start the development server with hot-reload
-
-```bash
-npm run dev
+# development
+$ pnpm run dev
 ```
